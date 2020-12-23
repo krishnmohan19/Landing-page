@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import allReducer from "./reducer";
-import "bulma/css/bulma.css";
+// import "bulma/css/bulma.css";
 
 let store = createStore(
   allReducer,

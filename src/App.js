@@ -10,10 +10,12 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles } from "@material-ui/core/styles";
+// import Result from "./components/result";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    paddingRight: "3.5%",
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -52,6 +54,7 @@ function App() {
         </Toolbar>
       </AppBar>
       <Polls />
+      {/* <Result /> */}
     </div>
   );
 }

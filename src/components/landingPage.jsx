@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    height: "95vh",
+    paddingRight: "3.5%",
   },
   paper: {
     padding: theme.spacing(2),
@@ -20,9 +22,12 @@ export default function Polls() {
   console.log({ poll });
   return (
     <div className={classes.root}>
-      <Grid container spacing={3} style={{ height: "50%" }}>
+      <Grid container spacing={3} style={{ margin: "10px" }}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>
+          <Paper
+            className={classes.paper}
+            style={{ height: "80%", backgroundColor: "#ffd66b" }}
+          >
             <div>
               {poll !== null && (
                 <>
@@ -34,7 +39,10 @@ export default function Polls() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>
+          <Paper
+            className={classes.paper}
+            style={{ backgroundColor: "#c9cbff" }}
+          >
             {poll !== null && (
               <>
                 <h1 style={{ display: "inline-block" }}>
@@ -48,7 +56,10 @@ export default function Polls() {
           </Paper>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>
+          <Paper
+            className={classes.paper}
+            style={{ backgroundColor: "#c9cbff" }}
+          >
             {poll !== null && (
               <>
                 <h1>{poll.payload[2].question}</h1>

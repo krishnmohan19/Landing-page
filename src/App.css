@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  height: 100vh;
+  background-color: #f8f1f1;
+  padding: 3%;
 }
 
 .App-logo {
@@ -35,4 +38,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 {
+  height: 90%;
+}
+.MuiPaper-root.makeStyles-paper-5.MuiPaper-elevation1.MuiPaper-rounded {
+  height: 90%;
+}
+
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionStatic.MuiAppBar-colorPrimary.MuiPaper-elevation4 {
+  height: 7vh;
+}
+.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12 {
+  /* margin-top: 5%; */
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
+  height: 50%;
 }
