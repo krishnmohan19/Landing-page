@@ -31,8 +31,8 @@ export default function Polls() {
             <div>
               {poll !== null && (
                 <>
-                  <h1>{poll.payload[0].question}?</h1>
-                  <h1>{poll.payload[0].question_hindi}?</h1>
+                  <h3>{poll.payload[0].question}?</h3>
+                  <h3>{poll.payload[0].question_hindi}?</h3>
                 </>
               )}
             </div>
@@ -45,12 +45,12 @@ export default function Polls() {
           >
             {poll !== null && (
               <>
-                <h1 style={{ display: "inline-block" }}>
+                <h3 style={{ display: "inline-block" }}>
                   {poll.payload[1].question}
-                </h1>
-                <h1 style={{ display: "inline-block" }}>
+                </h3>
+                <h3 style={{ display: "inline-block" }}>
                   {poll.payload[1].question_hindi}
-                </h1>
+                </h3>
               </>
             )}
           </Paper>
@@ -62,8 +62,8 @@ export default function Polls() {
           >
             {poll !== null && (
               <>
-                <h1>{poll.payload[2].question}</h1>
-                <h1>{poll.payload[2].question_hindi}</h1>
+                <h3>{poll.payload[2].question}</h3>
+                <h3>{poll.payload[2].question_hindi}</h3>
               </>
             )}
           </Paper>
